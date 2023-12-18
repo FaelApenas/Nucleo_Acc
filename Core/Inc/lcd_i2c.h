@@ -11,6 +11,8 @@
 #include "main.h"
 #include <stdio.h>
 
+#define LCD_DDR 0x80
+
 #define I2C_ADDR 0x27 // I2C address of the PCF8574
 #define RS_BIT 0 // Register select bit
 #define EN_BIT 2 // Enable bit

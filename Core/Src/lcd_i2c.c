@@ -64,24 +64,15 @@ void lcd_write_string(char *str) {
 
 void lcd_set_cursor(uint8_t row, uint8_t column) {
     uint8_t address;
-    switch (row) {
-        case 0:
-            address = 0x00;
-            break;
-        case 1:
-            address = 0x40;
-            break;
-        case 2:
-            address = 0x14;
-		    break;
-        case 3:
-        	address = 0x54;
-       		break;
-        default:
-            address = 0x00;
+    uint8_t row_add[4] ={0x00,0x40,0x14,0x54}; 
+    if(LCD_ROWS<row)
+    {
+      row=0;
     }
+    else{address= row_add[row];}
+    
     address += column;
-    lcd_send_cmd(0x80 | address);
+    lcd_send_cmd(LCD_DDR | address);
 }
 
 void lcd_clear(void) {
