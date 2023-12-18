@@ -1,0 +1,7 @@
+../Core/Src/Acc.c:12:6:acc_init	32	static
+../Core/Src/Acc.c:62:9:acc_xread	32	static
+../Core/Src/Acc.c:71:9:acc_yread	32	static
+../Core/Src/Acc.c:80:9:acc_zread	32	static
+../Core/Src/Acc.c:92:9:gy_xread	32	static
+../Core/Src/Acc.c:101:9:gy_yread	32	static
+../Core/Src/Acc.c:110:9:gy_zread	32	static

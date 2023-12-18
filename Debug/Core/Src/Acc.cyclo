@@ -1,0 +1,7 @@
+Acc.c:12:6:acc_init	5
+Acc.c:62:9:acc_xread	1
+Acc.c:71:9:acc_yread	1
+Acc.c:80:9:acc_zread	1
+Acc.c:92:9:gy_xread	1
+Acc.c:101:9:gy_yread	1
+Acc.c:110:9:gy_zread	1
